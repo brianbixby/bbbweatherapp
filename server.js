@@ -41,6 +41,7 @@ app.use(
         "https://api.openweathermap.org",
         "http://openweathermap.org",
       ],
+      "base-uri": 'none',
     },
   })
 );
