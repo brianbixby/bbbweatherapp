@@ -8,10 +8,6 @@ import {weatherFetchRequest, weatherFetch} from '../../actions/weather-actions.j
 import * as util from './../../lib/util.js';
 
 class LandingContainer extends React.Component {
-  constructor(props){
-    super(props);
-  }
-
   componentWillMount() {
     console.log('If you have any questions about my code please email me @BrianBixby0@gmail.com and visit https://www.builtbybixby.us to see my latest projects.');
     if (localStorage.timestamp && localStorage.timestamp > new Date().getTime()) {

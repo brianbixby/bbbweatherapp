@@ -11,16 +11,39 @@ const path = require('path');
 app.use(compression());
 
 app.use(
-  helmet.contentSecurityPolicy({
-    useDefaults: false,
-    directives: {
-      "default-src": "'self'",
-      "script-src": "'self'",
-      "style-src": "'self'",
-      "connect-src": ["'self'", process.env.REACT_APP_API_URL]
-    },
-  })
-);
+    helmet.contentSecurityPolicy({
+      useDefaults: false,
+      directives: {
+        'default-src': "'self'",
+        'script-src': [
+          "'self'",
+          'https://fonts.gstatic.com',
+          'https://fonts.googleapis.com',
+        ],
+        'style-src': [
+          "'self'",
+          'https://fonts.gstatic.com',
+          'https://fonts.googleapis.com',
+        ],
+        'connect-src': [
+          "'self'",
+          'https://ipapi.co',
+          'https://maps.googleapis.com',
+          'https://api.openweathermap.org'
+        ],
+        'font-src': [
+          "'self'",
+          'https://fonts.gstatic.com',
+          'https://fonts.googleapis.com',
+        ],
+        'img-src': [
+          "'self'",
+          'https://api.openweathermap.org',
+          'http://openweathermap.org'
+        ],
+      },
+    })
+  );
 
 app.use(express.static(path.join(__dirname, 'build')));
 

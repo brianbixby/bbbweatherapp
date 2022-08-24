@@ -1,7 +1,8 @@
 import React from 'react';
-// import superagent from 'superagent';
-
-// import { weatherFetchRequest } from '../../actions/weather-actions.js';
+import searchIcon from '../../assets/search.svg';
+import deleteIcon from '../../assets/delete.svg';
+import searchIconHov from '../../assets/searchhov.svg';
+import deleteIconHov from '../../assets/deletehov.svg';
 
 class WeatherForm extends React.Component {
   constructor(props) {
@@ -31,20 +32,14 @@ class WeatherForm extends React.Component {
 
 
   render() {
-    let { location, error } = this.state;
-    let searchIcon = require('../../assets/search.svg');
-    let deleteIcon = require('../../assets/delete.svg');
-    let searchIconHov = require('../../assets/searchhov.svg');
-    let deleteIconHov = require('../../assets/deletehov.svg');
     let search = this.state.searchHov ? searchIconHov: searchIcon;
     let del = this.state.deleteHov ? deleteIconHov: deleteIcon;
     return (
       <form onSubmit={this.handleSubmit} className='weatherForm'>
-        <img src={search} onClick={this.handleSubmit} className='searchIcon'
+        <img src={search} alt="search icon" onClick={this.handleSubmit} className='searchIcon'
           onMouseOver={() => this.setState({searchHov: true })}
           onMouseOut={() => this.setState({searchHov: false })}
         />
-        {/* <i className="fa fa-search" onClick={this.handleSubmit}></i> */}
         <input
           type='text'
           name='location'
@@ -53,11 +48,10 @@ class WeatherForm extends React.Component {
           onChange={this.handleChange}
         />
 
-        <img src={del} className="deleteIcon" onClick={() => this.setState({location: ''})}
+        <img src={del} alt="clear search term icon" className="deleteIcon" onClick={() => this.setState({location: ''})}
           onMouseOver={() => this.setState({deleteHov: true })}
           onMouseOut={() => this.setState({deleteHov: false })}
         />
-        {/* <i className="fa fa-times" onClick={() => this.setState({location: ''})}></i> */}
         <button type='submit' className='hidden'></button>
       </form>
     );

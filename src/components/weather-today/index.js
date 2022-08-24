@@ -1,9 +1,6 @@
 import React from 'react';
 
 export class WeatherToday extends React.Component {
-  constructor(props){
-    super(props);
-  }
   
   tempToArray = num => num.toString().split('');
 
