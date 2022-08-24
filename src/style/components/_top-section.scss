@@ -1,6 +1,6 @@
 /*form  */
 .topSection {
-  background: rgb(74,144,226);
+  background: rgb(74, 144, 226);
 }
 form {
   margin: 0 6%;
@@ -13,7 +13,7 @@ input {
   color: #fff;
   padding-bottom: 10px;
   border: none;
-  letter-spacing: -.2px;
+  letter-spacing: -0.2px;
   font-weight: 100;
   background-color: #4a90e2 !important;
   padding-right: 23px;
@@ -21,8 +21,8 @@ input {
   padding-left: 30px;
 }
 form::before {
-  content: '';
-  content: '';
+  content: "";
+  content: "";
   width: 100%;
   height: 9px;
   background-color: #4a90e2;
@@ -31,8 +31,8 @@ form::before {
   left: 0;
   top: 4%;
 }
-form::after{
-  content: '';
+form::after {
+  content: "";
   width: 100%;
   height: 10px;
   background-color: #4a90e2;
@@ -42,10 +42,9 @@ form::after{
   top: 40px;
 }
 input:-webkit-autofill,
-input:-webkit-autofill:hover, 
-input:-webkit-autofill:focus
-input:-webkit-autofill{
-  -webkit-text-fill-color: #FFF !important;
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus input:-webkit-autofill {
+  -webkit-text-fill-color: #fff !important;
   background-color: #4a90e2 !important;
   -webkit-box-shadow: inset 0 0 0px 9999px #4a90e2;
   border: 1px solid #4a90e2 !important;
@@ -63,13 +62,15 @@ input:-webkit-autofill{
 :-moz-placeholder {
   color: #326db2;
 }
-.searchIcon, .deleteIcon {
+.searchIcon,
+.deleteIcon {
   fill: #326db2;
   font-size: 20px;
   cursor: pointer;
   width: 30px;
 }
-.searchIcon:hover, .deleteIcon:hover {
+.searchIcon:hover,
+.deleteIcon:hover {
   fill: #183968;
 }
 .searchIcon {
@@ -140,7 +141,7 @@ input:-webkit-autofill{
   -moz-justify-content: flex-end;
   justify-content: flex-end;
   width: 60%;
-  color: #FFF;
+  color: #fff;
   font-size: 157px;
   position: absolute;
   top: 0;
@@ -158,7 +159,7 @@ input:-webkit-autofill{
   margin-right: -3px;
   margin-left: 15px;
 }
-.todaysForecast{
+.todaysForecast {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -172,7 +173,7 @@ input:-webkit-autofill{
   position: relative;
   height: 100%;
 }
-.tempP{
+.tempP {
   width: 29%;
   margin-right: 5%;
 }
@@ -193,7 +194,7 @@ input:-webkit-autofill{
   -moz-justify-content: flex-end;
   justify-content: flex-end;
   width: 40%;
-  color: #FFF;
+  color: #fff;
   position: absolute;
   top: 0;
   right: 0;

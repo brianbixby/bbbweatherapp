@@ -1,8 +1,8 @@
-const weather = (state={}, action) => {
+const weather = (state = {}, action) => {
   let { type, payload } = action;
 
-  switch(type) {
-    case 'WEATHER_FETCH':
+  switch (type) {
+    case "WEATHER_FETCH":
       return payload;
     default:
       return state;

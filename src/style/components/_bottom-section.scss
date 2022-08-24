@@ -10,10 +10,13 @@
   position: relative;
   border-right: 1px solid #3b4b58;
 }
-.weekForecastItem:nth-child(5){
+.weekForecastItem:nth-child(5) {
   border-right: none;
 }
-.date, .icon, .min, .max {
+.date,
+.icon,
+.min,
+.max {
   left: 50%;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -31,7 +34,7 @@
   position: absolute;
   top: 25%;
 }
-.max{
+.max {
   font-size: 16px;
   font-weight: 700;
   color: #3b4b58;
@@ -46,5 +49,5 @@
   font-weight: 100;
 }
 .icon img {
-    margin-top: -15%;
+  margin-top: -15%;
 }
