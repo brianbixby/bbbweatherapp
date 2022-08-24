@@ -6,6 +6,8 @@ import WeatherToday from './../weather-today';
 import WeatherForecast from './../weather-forecast';
 import {weatherFetchRequest, weatherFetch} from '../../actions/weather-actions.js';
 import * as util from './../../lib/util.js';
+import cloud1 from '../../assets/cloud1.webp';
+import cloud2 from '../../assets/cloud2.webp';
 
 class LandingContainer extends React.Component {
   componentWillMount() {
@@ -65,8 +67,6 @@ class LandingContainer extends React.Component {
 
   render() {
     let {weather} = this.props;
-    let cloud1 = require('../../assets/cloud1.png');
-    let cloud2 = require('../../assets/cloud2.png');
     let cloud1Style = {
       background: `url(${cloud1}) no-repeat`,
     }; 
