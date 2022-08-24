@@ -39,9 +39,9 @@ app.use(
       "img-src": [
         "'self'",
         "https://api.openweathermap.org",
-        "http://openweathermap.org",
+        "https://openweathermap.org",
       ],
-      "base-uri": 'none',
+      "base-uri": "'self'",
     },
   })
 );
