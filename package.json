@@ -9,7 +9,7 @@
     "node": "16.14.2",
     "npm": "8.5.0"
   },
-  "homepage": "https://www.builtbybixby.com",
+  "homepage": "https://intense-ravine-51994.herokuapp.com",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.3.0",
