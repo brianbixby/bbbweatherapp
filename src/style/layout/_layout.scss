@@ -1,0 +1,108 @@
+@import './../lib/vars';
+.hidden {
+  display: none;
+}
+.weatherContainer {
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -64%);
+  -ms-transform: translate(-50%, -64%);
+  transform: translate(-50%, -64%);
+  z-index: 2;
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,.5);
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 400px;
+  height: 316px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0 0 20px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0 0 20px rgba(0,0,0,0.6);
+    -o-box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+.cloud1 {
+  position: absolute;
+  top: 40%;
+  left: calc((50% - 210px));
+  -webkit-transform: translate(-50%, -60%);
+  -ms-transform: translate(-50%, -60%);
+  transform: translate(-50%, -60%);
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  z-index: 3;
+  height: 100px;
+  width: 200px;
+}
+.cloud2 {
+  position: absolute;
+  top: 36%;
+  right: calc((50% - 330px));
+  -webkit-transform: translate(-50%, -64%);
+  -ms-transform: translate(-50%, -64%);
+  transform: translate(-50%, -64%);
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  z-index: 3;
+  height: 100px;
+  width: 125px;
+}
+  .topSection {
+    height: 64%;
+    padding: 4% 0%;
+    position: relative;
+  }
+  .bottomSection {
+    height: 36%;
+  }
+@media (max-width: 412px) {
+  .weatherContainer {
+    width: 100vw;
+    min-width: 0;
+  }
+  .tempP{
+      height: 100%;
+      margin-bottom: 15px;
+      font-size: 110px;
+    }
+    .temp {
+      font-size: 100px;
+    }
+    .degree {
+      font-size: 40px;
+      margin-right: 0;
+      margin-left: 0;
+    }
+    .f {
+      position: absolute;
+      top: 0;
+      left: 10px;
+      font-size: 21px;
+    }
+    .description {
+      top: 33%;
+      -webkit-transform: translateY(-33%);
+      -ms-transform: translateY(-33%);
+      transform: translateY(-33%);
+    }
+    .humidity {
+      margin-top: 0;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+    .cloud1 {
+      left: calc((50% - 200px));
+    }
+    .cloud2 {
+      right: calc((50% - 300px));
+    }
+    .date {
+      font-size: 12px;
+    }
+    form::before, form::after {
+      display: none;
+    }
+}
