@@ -14,7 +14,7 @@ export class WeatherForecast extends React.Component {
             <p className="date">{this.formatDate(forecast[0])}</p>
             <p className="icon">
               <img
-                src={`http://openweathermap.org/img/w/${forecast[1]}.png`}
+                src={`https://openweathermap.org/img/w/${forecast[1]}.png`}
                 alt={forecast[4] || "weather icon"}
               />
             </p>
